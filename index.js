@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "*", // <- Diganti sama alamat front-end
+    origin: "https://tcc-dot-prak-cc-if-c-457212.de.r.appspot.com", // <- Diganti sama alamat front-end
     credentials: true,
   })
 );
