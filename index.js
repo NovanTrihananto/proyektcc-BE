@@ -23,5 +23,8 @@ app.use(UserRoute);
 app.use(kursusroute);
 app.use('/images', express.static('public/images'));
 app.use(ikutkursusroute);
-app.listen(5000, () => console.log("Server connected"));
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
 
